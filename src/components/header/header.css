@@ -75,6 +75,10 @@ header {
     header {
         height: 90vh;
     }
+    .me{
+        width: 15rem;
+        left: 37%;
+    }
 }
 
 /*==== MEDIA QUERIES (SMALL DEVICES) ====*/

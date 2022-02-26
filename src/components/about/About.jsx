@@ -1,9 +1,7 @@
 import React from 'react';
 import './about.css';
 import ME from '../../assets/me-about.png';
-import { FaAward } from 'react-icons/fa';
-import { VscFolderLibrary } from 'react-icons/vsc';
-
+import {FaAward, FaFolderOpen } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -22,17 +20,20 @@ const About = () => {
         <div className="about__content">
 
           <div className="about__cards">
-            <article className="about__card">
+            <article className="about__card c1">
               <FaAward className='about__icon' />
               <h5>Experience</h5>
               <small>2+ years working</small>
             </article>
 
-            <article className="about__card">
-              <VscFolderLibrary className='about__icon' />
+            <article className="about__card c2">
+              <FaFolderOpen className='about__icon' />
               <h5>Proyects</h5>
               <small>20+ Completed Proyects</small>
             </article>
+
+            
+
           </div>
           <p>I'm Fernando Alarcon from Argentina .
             Always in search of new challenges in a development
@@ -47,6 +48,8 @@ const About = () => {
 
 
       </div>
+
+
     </section>
   )
 }
