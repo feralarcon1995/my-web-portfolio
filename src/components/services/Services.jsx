@@ -1,30 +1,82 @@
 import React from 'react';
 import './services.css';
-import IMG from '../../assets/service.jfif';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaGitAlt } from 'react-icons/fa';
 import { SiSass, SiBootstrap, SiJavascript, SiJquery, SiFigma, SiAdobephotoshop, SiReact, SiFirebase, SiMaterialui } from 'react-icons/si';
+import { MdDesignServices, MdSecurity, MdOutlineSupportAgent } from 'react-icons/md';
+import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import { BsPeopleFill, BsFileTextFill } from 'react-icons/bs'
+import { Fade } from "react-awesome-reveal";
 
 const Services = () => {
   return (
-    <section id="services">
-      <h5>Waht I Offer</h5>
-      <h2>Services</h2>
 
-      <div className="container services__container">
+    <Fade bottom>
 
-        <article className="service">
-          <div className="service__head">
-            <h3>Web Development</h3>
-            <p>Creation of websites, with the best practices to create the best solutions that adapt to what you image, sites with modern design that adapt to all types of screens, with an optimized seo for their positioning, also save data and products in the cloud.</p>
-          </div>
+      <section id="services" >
+        <h5>Waht I Offer</h5>
+        <h2>Services</h2>
+
+        <div className="container services__container">
+
+          <article className="service">
+            <div className="service__grid">
+
+              <div className="service_item">
+                <MdDesignServices className="service-icon"/>
+                <h3>PROFESSIONAL DESIGNS</h3>
+                <p>
+                  Modern, minimalist designs, we adapt your idea and make it a reality.
+                </p>
+              </div>
+
+              <div className="service_item">
+                <HiOutlineDesktopComputer className="service-icon"/>
+                <h3>MOBILE OPTIMIZATION</h3>
+                <p>
+                  Your website is automatically optimized for mobile, so your visitors can view it comfortably from any mobile device or PC.                </p>
+              </div>
+
+              <div className="service_item">
+                <BsPeopleFill className="service-icon"/>
+                <h3>SOCIAL NETWORKS</h3>
+                <p>
+                  MYour website and social media profiles can connect. Import your favorite images directly to your website from your accounts easily.
+                </p>
+              </div>
+
+              <div className="service_item">
+                <BsFileTextFill className="service-icon"/>
+                <h3>CONTACT FORMS</h3>
+                <p>
+                  Add a contact form and a link to Google Maps so everyone can reach you and find you wherever they are.
+                </p>
+              </div>
+
+              <div className="service_item">
+                <MdSecurity className="service-icon"/>
+                <h3>SSL SECURITY</h3>
+                <p>
+                  With state-of-the-art security servers and protocols, security is guaranteed for you and your visitors.
+                </p>
+              </div>
 
 
-          <div className="experience__frontend">
-            <h3>Front End Skills</h3>
+              <div className="service_item">
+                <MdOutlineSupportAgent className="service-icon"/>
+                <h3>FASTER SUPPORT</h3>
+                <p>
+                If you have any questions, there will be, site maintenance, and site changes.
+                </p>
+              </div>
+
+            </div>
+
             <div className="experiencie__details">
+              <h3>FRONTEND SKILLS</h3>
+              <div className="experience__item">
               <Tooltip title="HTML" placement="bottom-start">
                 <IconButton>
                   <AiFillHtml5 className='experience__details-icon' />
@@ -113,19 +165,16 @@ const Services = () => {
 
               </Tooltip>
 
-
-
-
+              </div>
             </div>
-          </div>
-        </article>
 
-        <article className='service__img'>
-          <img src={IMG} alt="service img" />
-        </article>
+          </article>
 
-      </div>
-    </section>
+          
+
+        </div>
+      </section>
+    </Fade>
   )
 }
 

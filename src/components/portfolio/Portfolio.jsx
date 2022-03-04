@@ -1,5 +1,6 @@
 import React from 'react';
 import './portfolio.css';
+import { Fade } from "react-awesome-reveal";
 
 const Portfolio = () => {
 
@@ -40,7 +41,7 @@ const Portfolio = () => {
       id: 5,
       title: 'Ka Wirth',
       img: 'https://i.postimg.cc/8zZKt79P/kw.png',
-      descrip: 'Aesthetic website for important Argentine chain',
+      descrip: 'Esthetic website for important Argentine chain',
       github: 'https://github.com/feralarcon1995/kawirthboedo',
       demo: 'https://feralarcon1995.github.io/kawirthboedo/'
     },
@@ -55,14 +56,16 @@ const Portfolio = () => {
   ]
 
   return (
-    <section id="portfolio">
+    <Fade bottom>
+
+    <section id="portfolio" >
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
 
         {workData.map((data) => (
-          <article className='portfolio__item' id={data?.id}>
+          <article className='portfolio__item' key={data?.id}>
             <img src={data?.img} alt={data?.title} />
             <div className="portfolio__content">
               <h3>{data?.title}</h3>
@@ -75,10 +78,9 @@ const Portfolio = () => {
           </article>
         ))}
 
-
-
       </div>
     </section>
+    </Fade>
   )
 }
 

@@ -1,3 +1,10 @@
+#portfolio{
+    min-height: 90vh;
+    max-height: 90%;
+    background: #1a1a1a;
+    padding: 3rem 0;
+}
+
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,7 +16,7 @@
     border: 3px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
-    border-radius: 1rem;
+    border-radius: 0.30rem;
     height: 100%;
     align-items: center;
     box-shadow: 5px 5px 5px 0px var(--color-variant);
@@ -25,7 +32,6 @@
 .portfolio__item img {
     width: 100%;
     height: 250px;
-    border-radius: 1rem 1rem 0 0;
     object-fit: cover;
 
 }
