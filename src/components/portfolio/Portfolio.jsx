@@ -53,6 +53,14 @@ const Portfolio = () => {
       github: 'https://github.com/feralarcon1995/space-moon',
       demo: 'https://space-moon-ozx1wbe5o-feralarcon1995.vercel.app/'
     },
+    {
+      id: 7,
+      title: 'Pet Land',
+      img: 'https://i.ibb.co/fFpTmCs/pet.png',
+      descrip: 'Web made to show structure in sass.',
+      github: 'https://github.com/feralarcon1995/pet-land',
+      demo: 'https://feralarcon1995.github.io/pet-land/'
+    }
   ]
 
   return (
