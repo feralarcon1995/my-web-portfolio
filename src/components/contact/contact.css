@@ -1,7 +1,6 @@
 #contact{
     min-height: 90vh;
     max-height: 90%;
-    background: #1a1a1a;
     padding: 3rem 0;
 }
 
@@ -22,19 +21,16 @@
 }
 
 .contact__option{
-    background:var(--color-bg-variant);
+    background: #095784;
+    box-shadow: 10px 10px 0px 0px #004278;
+    border-radius: .3rem;
     padding: 1.2rem;
-    border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
-    width: 100%;
+    width: 90%;
 }
 
-.contact__option:hover{
-    background: rgba(238, 238, 238, 0.068);
-    border-color: var(--color-primary-variant);
-}
 
 .contact__option-icon{
     font-size: 1.5rem;

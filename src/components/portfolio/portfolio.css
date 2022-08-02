@@ -1,57 +1,148 @@
-#portfolio{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&display=swap');
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    filter: grayscale(60%);
+    clip-path: circle(60% at right 100%);
+}
+
+#portfolio {
     min-height: 90vh;
     max-height: 90%;
     background: #1a1a1a;
-    padding: 3rem 0;
+    padding-top: 3rem;
+    width: 100%;
 }
 
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.p-dark span {
+    font-size: 25rem;
+    font-family: 'Black Han Sans', sans-serif;
+    padding: 30px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    color: rgba(255, 255, 255, 0.184);
+
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
-    border: 3px solid var(--color-primary);
-    height: fit-content;
-    transition: var(--transition);
-    border-radius: 0.30rem;
-    height: 100%;
+    position: relative;
+    height: 800px;
+    display: flex;
     align-items: center;
-    box-shadow: 5px 5px 5px 0px var(--color-variant);
+    justify-content: center;
 
 }
 
-.portfolio__item:hover {
-    background: rgba(238, 238, 238, 0.068);
-    border-color: var(--color-bg-variant);
-    cursor: default;
+.p-dark {
+    background: rgb(66, 66, 66);
+    background: radial-gradient(circle, rgba(66, 66, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.portfolio__item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.p-green {
+    background: rgb(20, 80, 92);
+    background: radial-gradient(circle, rgba(20, 80, 92, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.p-blue {
+    background: rgb(34, 31, 93);
+    background: radial-gradient(circle, rgba(34, 31, 93, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.p-pink {
+    background: rgb(255, 0, 122);
+    background: radial-gradient(circle, rgba(255, 0, 122, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.p-yellow {
+    background: rgb(255, 228, 74);
+    background: radial-gradient(circle, rgba(255, 228, 74, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.portfolio__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 40%;
 
 }
 
-.portfolio__item h3 {
-    text-align: center;
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    margin: 3px 0px;
-    padding: 1rem;
+.portfolio__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    padding: 10px;
 }
 
-.portfolio__item p {
-    text-align: center;
+
+
+
+.dark h3 {
+    color: #fff;
+    font-size: 5rem;
+    font-family: 'Bebas Neue', cursive;
 }
+
+.dark p {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 0px;
+    padding-right: 30px;
+    font-family: 'Bebas Neue', cursive;
+
+
+}
+
+.light h3 {
+    color: #000000;
+    font-size: 5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.light p {
+    color: #000000;
+    font-size: 1.3rem;
+    padding: 10px 0px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
 
 .portfolio__btn {
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
+    justify-content: flex-start;
+    text-align: center;
+    width: 250px;
+}
+
+.btn-link {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: .3rem;
+    z-index: 2;
+}
+
+.btn-link:hover {
+    color: #fff;
+    outline: 1px solid #fff;
+    background-color: transparent;
 }
 
 
@@ -59,16 +150,66 @@
 
 @media screen and (max-width: 1024px) {
 
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
+    .portfolio__item {
+        height: 1000px;
+
+    }
+
+    .portfolio__content {
+        width: 55%;
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    .portfolio__item {
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .p-dark span {
+        font-size: 20rem;
+        bottom: 50%;
+    }
+
+    .portfolio__content {
+        width: 90%;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .portfolio__slider {
+        width: 100%;
+    }
+
+
+}
 
 @media screen and (max-width: 768px) {
+
+    .p-dark span {
+        font-size: 12rem;
+        bottom: 60%;
+    }
+
     .portfolio__container {
         grid-template-columns: 1fr;
     }
+
+    .dark p { 
+        font-size: 1.1rem;
+    }
+
+    .p-pink {
+        background: rgb(255, 0, 122);
+        background: radial-gradient(circle, rgb(117, 18, 66) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .p-yellow {
+        background: rgb(145, 132, 58);
+        background: radial-gradient(circle, rgb(123, 112, 49) 0%, rgba(0, 0, 0, 1) 100%);
+    }
 }
-
-

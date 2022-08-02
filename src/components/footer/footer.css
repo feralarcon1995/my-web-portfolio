@@ -32,11 +32,16 @@ footer img{
 
 footer a{
     color:var(--color-primary);
-
+    transition: var(--transition);
 }
 
+footer a:hover{
+color:  #008cff;
+}
+
+
 .footer_copyright{
-    background: var(--color-primary);
+    background:  #0d385c;
     padding: 1rem;
     text-align: center;
 }
