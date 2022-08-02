@@ -25,7 +25,6 @@ const Header = () => {
             <img src="https://i.ibb.co/YPc94rQ/bg1.png" alt="handcode mobile" className='img2'/>
             <img src="https://i.ibb.co/D1zQwT2/bg3.png" alt="pinder mobile" className='img1'/>
             <img src="https://i.ibb.co/YL5CLP7/bg2.png" alt="viajaya mobile" className='img3'/>
-            <img src='https://i.ibb.co/BGy3xvC/bg.png' alt="header pic" className='header-mobile'/>
           </article>
         </section>
       </header>
