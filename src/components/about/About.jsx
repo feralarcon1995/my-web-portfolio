@@ -39,38 +39,37 @@ const About = () => {
                 <small>20+ Proyectos Terminados</small>
               </article>
 
-
-
             </div>
             <p>Hola soy Fernando Alarcón de Argentina. Siempre estoy en búsqueda de nuevos retos en un equipo de desarrollo, donde pueda aportar valor desde mi experiencia y conocimiento dentro del área de Front-End,  además complementar con seguir aprendiendo día a día. Paralelamente estudio inglés para mejorar en el campo laboral.</p>
 
-            <article className="stack">
+          
+          </div>
+        </div>
+
+        <article className="stack">
               <h5>Mi stack de tecnologias:</h5>
 
               <div className="stack__list">
                 <ul>
-                  <li><SiJavascript /></li>
-                  <li><FaPython /></li>
-                  <li><AiFillHtml5 /></li>
-                  <li><FaCss3Alt /></li>
-                  <li><SiSass /></li>
-                  <li><FaBootstrap /></li>
-                  <li><SiMaterialui /></li>
-                  <li><FaGitSquare /></li>
-                  <li><FaReact /></li>
-                  <li><SiJquery /></li>
-                  <li><SiDjango /></li>
-                  <li><SiFirebase /></li>
-                  <li><SiSqlite /></li>
-                  <li><FaFigma /></li>
-                  <li><SiAdobephotoshop /></li>
+                  <li>JAVASCRIPT <SiJavascript /></li>
+                  <li>PYTHON <FaPython /></li>
+                  <li>HTML5 <AiFillHtml5 /></li>
+                  <li>CSS3 <FaCss3Alt /></li>
+                  <li>SASS <SiSass /></li>
+                  <li>BOOTSTRAP <FaBootstrap /></li>
+                  <li>MATERIAL UI <SiMaterialui /></li>
+                  <li>GIT <FaGitSquare /></li>
+                  <li>REACTJS <FaReact /></li>
+                  <li>JQUERY <SiJquery /></li>
+                  <li>DJANGO <SiDjango /></li>
+                  <li>FIREBASE <SiFirebase /></li>
+                  <li>SQLITE <SiSqlite /></li>
+                  <li>FIGMA <FaFigma /></li>
+                  <li>PHOTOSHOP <SiAdobephotoshop /></li>
                 </ul>
               </div>
 
             </article>
-          </div>
-        </div>
-
       </section>
     </Fade>
 
