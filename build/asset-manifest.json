@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2ed8a3bb.css",
+    "main.js": "/static/js/main.c906f37c.js",
+    "static/media/cv-fernando-alarcon.pdf": "/static/media/cv-fernando-alarcon.4b645851820c01f4d8a6.pdf",
+    "static/media/martin.png": "/static/media/martin.b40ba071e5f3c2837f64.png",
+    "static/media/me.webp": "/static/media/me.76f85e2438e20d355a82.webp",
+    "static/media/luis.jpg": "/static/media/luis.e8c51b70fdb79985a547.jpg",
+    "static/media/luciano.jpg": "/static/media/luciano.71811c6f0f3a21112e5a.jpg",
+    "index.html": "/index.html",
+    "main.2ed8a3bb.css.map": "/static/css/main.2ed8a3bb.css.map",
+    "main.c906f37c.js.map": "/static/js/main.c906f37c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ed8a3bb.css",
+    "static/js/main.c906f37c.js"
+  ]
+}
